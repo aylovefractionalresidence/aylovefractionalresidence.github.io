@@ -101,7 +101,6 @@ form label{display:block;font-size:.85rem;font-weight:600;margin:12px 0 4px}form
 <a class="wa" href="https://wa.me/529843165741" target="_blank" rel="noopener"><span class="ic">✆</span><span><b><span data-l="fr">WhatsApp Mexique</span><span data-l="en">WhatsApp Mexico</span><span data-l="es">WhatsApp México</span></b>+52 984 316 5741</span></a>
 <a class="wa" href="https://wa.me/17864440154" target="_blank" rel="noopener"><span class="ic">✆</span><span><b><span data-l="fr">WhatsApp États-Unis</span><span data-l="en">WhatsApp USA</span><span data-l="es">WhatsApp EE. UU.</span></b>+1 786 444 0154</span></a>
 <a class="wa" href="https://wa.me/33674111431" target="_blank" rel="noopener"><span class="ic">✆</span><span><b><span data-l="fr">WhatsApp France</span><span data-l="en">WhatsApp France</span><span data-l="es">WhatsApp Francia</span></b>+33 6 74 11 14 31</span></a>
-<a class="wa" href="mailto:ayloveandfinancing@gmx.com"><span class="ic" style="background:var(--gold)">@</span><span><b>E-mail</b>ayloveandfinancing@gmx.com</span></a>
 <a class="wa" href="mailto:aylove@gmx.com"><span class="ic" style="background:var(--gold)">@</span><span><b>E-mail</b>aylove@gmx.com</span></a></div>
 <form class="card" id="cf"><h3><span data-l="fr">Demander une présentation</span><span data-l="en">Request a presentation</span><span data-l="es">Solicita una presentación</span></h3>
 <label for="n"><span data-l="fr">Nom</span><span data-l="en">Name</span><span data-l="es">Nombre</span></label><input id="n" required autocomplete="name">
@@ -134,7 +133,7 @@ document.getElementById('bg').addEventListener('click',function(){document.getEl
 document.querySelectorAll('#mm a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('mm').classList.remove('on')})});
 document.getElementById('cf').addEventListener('submit',function(ev){ev.preventDefault();var g=function(i){return document.getElementById(i).value},L=D[cur];
 var r=document.getElementById('r');var b=L.n+': '+g('n')+'\nE-mail: '+g('e')+'\n'+L.t+': '+g('t')+'\n'+L.r+': '+r.options[r.selectedIndex].text+'\n\n'+g('m');
-location.href='mailto:ayloveandfinancing@gmx.com?subject='+encodeURIComponent(L.subj+' – '+g('n'))+'&body='+encodeURIComponent(b);});
+location.href='mailto:aylove@gmx.com?subject='+encodeURIComponent(L.subj+' – '+g('n'))+'&body='+encodeURIComponent(b);});
 var lb=document.getElementById('lb');document.querySelectorAll('.gal img').forEach(function(i){i.addEventListener('click',function(){lb.querySelector('img').src=i.src;lb.classList.add('on')})});lb.addEventListener('click',function(){lb.classList.remove('on')});
 if(/test=1/.test(location.search)){setTimeout(function(){var empty=0;document.querySelectorAll('[data-l="'+cur+'"]').forEach(function(e){if(!e.textContent.trim())empty++});
 var o=document.getElementById('testout');o.textContent='RESULT lang='+cur+' title='+document.title+' empty='+empty+' sw='+document.documentElement.scrollWidth+' vw='+innerWidth+' errors='+ERR.length+' '+ERR.join('|');},300)}
